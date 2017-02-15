@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contact Form</title>
+    <meta name="description" content="Contact Form">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google reCAPTCHA -->
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+</head>
+<body>
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Contact Form</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="active"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <h1>Contact<br /><small>We'd love to hear from you!</small></h1>
+                <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <form role="form" method="POST" action="verify.php">
+                    <div class="row">
+                        <div class="form-group col-lg-4">
+                            <label for="input1">Name</label>
+                            <input type="text" name="contact_name" class="form-control" id="input1" maxlength="128" autofocus>
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="input2">Email Address</label>
+                            <input type="email" name="contact_email" class="form-control" id="input2" maxlength="128" placeholder="jane@example.com">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="input3">Phone Number</label>
+                            <input type="tel" name="contact_phone" class="form-control" id="input3" maxlength="32" placeholder="888-555-0123">
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="form-group col-lg-12">
+                            <label for="input4">Message</label>
+                            <textarea name="contact_message" class="form-control" rows="6" id="input4" maxlength="1024" placeholder="Any specific questions or comments?"></textarea>
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <button type="submit" name="submit" value="submit" class="btn btn-default btn-lg">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-4">
+                <h3>Example & Sons, LLC</h3>
+                <h4>Purveyor of Fine Examples</h4>
+                <p>1011 16th Street<br>
+                    Denver, CO 80202<br>
+                </p>
+                <p><i class="fa fa-phone"></i> <abbr title="Phone">P</abbr>: (888) 555-0123</p>
+                <p><i class="fa fa-envelope-o"></i> <abbr title="Email">E</abbr>: <a href="mailto:info@example.com">info@example.com</a></p>
+                <p><i class="fa fa-clock-o"></i> <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+                <ul class="list-unstyled list-inline list-social-icons">
+                  <li class="tooltip-social facebook-link"><a href="#facebook-page" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook fa-lg"></i></a></li>
+                  <li class="tooltip-social linkedin-link"><a href="#linkedin-company-page" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                  <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter fa-lg"></i></a></li>
+                  <li class="tooltip-social google-plus-link"><a href="#google-plus-page" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus fa-lg"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <ul class="pull-right list-unstyled list-inline">
+                <li class="tooltip-social github-link"><a href="#" data-toggle="tooltip" data-placement="top" title="GitHub"><i class="fa fa-github fa-lg"></i></a></li>
+                <li class="tooltip-social rss-link"><a href="#" data-toggle="tooltip" data-placement="top" title="Atom/RSS feed"><i class="fa fa-rss fa-lg"></i></a></li>
+            </ul>
+            <p>Copyright &copy; 2017</p>
+        </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
